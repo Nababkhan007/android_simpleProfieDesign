@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowPlayerInfoActivity">
+
+    <!--<android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerViewId">
+
+    </android.support.v7.widget.RecyclerView>-->
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardElevation="20dp"
+        app:cardBackgroundColor="#cccccc"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/playerNameTvId"
+                android:text="Player Name"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:textColor="#FF5722"
+                android:textStyle="bold"
+                android:fontFamily="cursive"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/playerAgeTvId"
+                android:text="Player Age"
+                android:textColor="#FF0000"
+                android:fontFamily="casual"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/playerRoleTvId"
+                android:text="Player Role"
+                android:textColor="#FF0000"
+                android:fontFamily="casual"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/playerCountryNameTVId"
+                android:text="Player Country Name"
+                android:textColor="#FF0000"
+                android:fontFamily="casual"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
